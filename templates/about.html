@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rivendell</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body style="background-color:lightgreen">
+    <nav class="green">
+        <div class="container nav-wrapper">
+            <a href="/" class="brand-logo"><img src="../static/images/koifish_1.jpg" width="150" height="65"></a>
+            <ul id="nav-mobile" class="right">
+                <!--add side bars here-->
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About us</a></li>
+                <li><a href="contact">Contact us</a></li> 
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    <div class="container" style="background-color: white;">
+    <h1 style="text-align: center; text-decoration: underline;">About us</h1>
+    <p>Rivendell Gardens is a dream of ours.  We love nature and protecting the environment. 
+         We want to grow trees that not only provide oxygen, shade, esthetic beauty, but also produce delicious edible fruits.  
+         Currently we are planting fruit trees on our farm and we are in the process of preparing a tropical fruit trees nursery which will be opened to the public on Saturday and
+          Sundays (coming soon).  We do sell our grafted fruit trees from Riverview and Lake Wales.  Just email us and you can come by to pick them up. 
+           Our fruit trees are grafted or air layered.  Some have fruits already and others will fruit within 1-2 years. 
+            Our goal is to share the exotic trees and fruits to everyone at a great price. 
+             Soon we will build a Japanese Garden with Koi ponds where you all can tour and enjoy it as much as we do.</p>
+    </div>
+    {% endblock content %}
+</body>
+</html>
