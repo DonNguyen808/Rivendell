@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
+
+<body style="background-image: url(static/images/lotr-rivendell.png); background-repeat: no-repeat; background-size: cover; height: 100px;;">
 <head>
     <meta charset="UTF-8">
     <title>Rivendell</title>
@@ -10,10 +13,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body style="background-color:lightgreen">
+<style>
+    .bordered {
+      border:10px outset yellowgreen;
+
+    }
+    p {
+        font-size: 20px;
+    }
+    .border2 {
+        border:10px outset lightskyblue;
+    }
+  </style>
+
     <nav class="green">
         <div class="container nav-wrapper">
-            <a href="/" class="brand-logo"><img src="../static/images/koifish_1.jpg" width="150" height="65"></a>
+            <a href="/" class="brand-logo"><img src="../static/images/White Koi.png"  width="150" height="65"><img src="../static/images/Blackkoi.png"  width="150" height="65"></a>
             <ul id="nav-mobile" class="right">
                 <!--add side bars here-->
                 <li><a href="/">Home</a></li>
@@ -24,16 +39,54 @@
     </nav>
 
     {% block content %}
-    <div class="container" style="background-color: white;">
+    <div class="container bordered" style="background-color: white; display: flow-root;">
     <h1 style="text-align: center; text-decoration: underline;">About us</h1>
     <p>Rivendell Gardens is a dream of ours.  We love nature and protecting the environment. 
-         We want to grow trees that not only provide oxygen, shade, esthetic beauty, but also produce delicious edible fruits.  
-         Currently we are planting fruit trees on our farm and we are in the process of preparing a tropical fruit trees nursery which will be opened to the public on Saturday and
-          Sundays (coming soon).  We do sell our grafted fruit trees from Riverview and Lake Wales.  Just email us and you can come by to pick them up. 
-           Our fruit trees are grafted or air layered.  Some have fruits already and others will fruit within 1-2 years. 
+        We want to grow trees that not only provide oxygen, shade, aesthetic beauty, but also produce delicious edible fruits.  
+        Currently we are planting fruit trees on our farm and we are in the process of preparing a tropical fruit trees nursery which will be opened to the public on Saturday and
+        Sundays (coming soon).  We do sell our grafted fruit trees from Riverview and Lake Wales.  Just email us and you can come by to pick them up. 
+        Our fruit trees are grafted or air layered.  Some have fruits already and others will fruit within 1-2 years. 
             Our goal is to share the exotic trees and fruits to everyone at a great price. 
-             Soon we will build a Japanese Garden with Koi ponds where you all can tour and enjoy it as much as we do.</p>
+            Soon we will build a Japanese Garden with Koi ponds where you all can tour and enjoy it as much as we do.</p>
     </div>
+
+
+    <style>
+        .column {
+          float: left;
+          padding: 5px;
+        }
+        
+        </style>
+
+    <div class="bordered" style="background-color:white; display: flow-root;">
+        <h1 style="text-align: center; font-family: fantasy;">Plans for the future:</h1>
+        <div class="row">
+            <div class="column">
+                <h2 style="text-decoration: underline;">Phase 1</h2>
+                <p>Plant all our fruit trees</p>
+                <img src="../static/images/lychee_tree.jpg" width="600">
+            </div>
+
+            <div class="column">
+                <h2 style="text-decoration: underline;">Phase 2</h2>
+                <p>Build our koi fish garden</p>
+                <img src="../static/images/koi_pond_garden.jpg" width="600">
+            </div>
+
+            <div class="column">
+                <h2 style="text-decoration: underline;">Phase 3</h2>
+                <p>Have the look and feel of the tokyo night lights</p>
+                <img src="../static/images/tokyo-night-lights.jpg"width="600">
+            </div>
+        </div>
+    </div>
+
+        
+
+
+
+    
     {% endblock content %}
 </body>
 </html>
