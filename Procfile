@@ -1,0 +1,1 @@
+web: gunicorn rivendell_django.wsgi
