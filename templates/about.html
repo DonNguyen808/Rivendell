@@ -2,7 +2,7 @@
 <html lang="en">
 {% load static %}
 
-<body style="background-image: url(static/images/lotr-rivendell.png); background-repeat: no-repeat; background-size: cover; height: 100px;;">
+<body style="background-image: url(static/images/lotr-rivendell.png); background-repeat: no-repeat; background-position: center; background-size: cover;">
 <head>
     <meta charset="UTF-8">
     <title>Rivendell</title>
@@ -11,6 +11,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+
 </head>
 
 <style>
@@ -21,14 +26,19 @@
     p {
         font-size: 20px;
     }
-    .border2 {
-        border:10px outset lightskyblue;
-    }
   </style>
+
+<style>
+    .column {
+      float: left;
+      padding: 5px;
+    }
+    
+</style>
 
     <nav class="green">
         <div class="container nav-wrapper">
-            <a href="/" class="brand-logo"><img src="../static/images/White Koi.png"  width="150" height="65"><img src="../static/images/Blackkoi.png"  width="150" height="65"></a>
+            <!-- <a href="/" class="brand-logo"><img src="../static/images/White Koi.png"  width="150" height="65"><img src="../static/images/Blackkoi.png"  width="150" height="65"></a> -->
             <ul id="nav-mobile" class="right">
                 <!--add side bars here-->
                 <li><a href="/">Home</a></li>
@@ -48,40 +58,30 @@
         Our fruit trees are grafted or air layered.  Some have fruits already and others will fruit within 1-2 years. 
             Our goal is to share the exotic trees and fruits to everyone at a great price. 
             Soon we will build a Japanese Garden with Koi ponds where you all can tour and enjoy it as much as we do.</p>
-    </div>
-
-
-    <style>
-        .column {
-          float: left;
-          padding: 5px;
-        }
-        
-        </style>
-
-    <div class="bordered" style="background-color:white; display: flow-root;">
+    <hr>
+    <div style="background-color:white; display: flow-root;">
         <h1 style="text-align: center; font-family: fantasy;">Plans for the future:</h1>
         <div class="row">
             <div class="column">
                 <h2 style="text-decoration: underline;">Phase 1</h2>
                 <p>Plant all our fruit trees</p>
-                <img src="../static/images/lychee_tree.jpg" width="600">
+                <img class="mw-100" src="../static/images/lychee_tree.jpg" alt="Max-width 100%">
             </div>
 
             <div class="column">
                 <h2 style="text-decoration: underline;">Phase 2</h2>
                 <p>Build our koi fish garden</p>
-                <img src="../static/images/koi_pond_garden.jpg" width="600">
+                <img class="mw-100" src="../static/images/koi_pond_garden.jpg" alt="Max-width 100%">
             </div>
 
             <div class="column">
                 <h2 style="text-decoration: underline;">Phase 3</h2>
-                <p>Have the look and feel of the tokyo night lights</p>
-                <img src="../static/images/tokyo-night-lights.jpg"width="600">
+                <p>Have the look and feel of the Tokyo night lights</p>
+                <img class="mw-100" src="../static/images/tokyo-night-lights.jpg" alt="Max-width 100%">
             </div>
         </div>
     </div>
-
+</div>
         
 
 

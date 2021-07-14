@@ -2,7 +2,7 @@
 
 <html lang="en">
 {% load static %}
-<body style="background-image: url(static/images/lotr-rivendell.png); background-repeat: no-repeat; background-position: center; background-size: cover; ">
+<body style="background-image: url(static/images/lotr-rivendell.png); background-repeat: no-repeat; background-position: center; background-size: cover;">
 <head>
     <meta charset="UTF-8">
     <title>Rivendell</title>
@@ -11,11 +11,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
 </head>
 
 <nav class="green">
     <div class="container nav-wrapper">
-        <a href="/" class="brand-logo"><img src="../static/images/White Koi.png"  width="150" height="65"><img src="../static/images/Blackkoi.png"  width="150" height="65"></a>
+        <!-- <a href="/" class="brand-logo"><img src="../static/images/White Koi.png"  width="150" height="65"><img src="../static/images/Blackkoi.png"  width="150" height="65"></a> -->
         <ul id="nav-mobile" class="right">
             <!--add side bars here-->
             <li><a href="/">Home</a></li>
@@ -40,133 +44,145 @@ background-position: center; background-repeat: no-repeat; height: 500px; "><img
     .border2 {
         border:10px outset lightskyblue;
     }
+    .img-1{
+        max-width: 100%;
+        }
+    .flag{
+        max-width: 100%;
+    }
+
+    .fix-table {
+        max-width: 100%;
+    }
   </style>
   
 
     <div class="container bordered" style="background-color:white; display: flow-root;">
-        <img src="../static/images/Rivendell Name v4 Trim.png" width="1200" height="350">
+        <img class="img-1" src="../static/images/Rivendell_logo.png">
         <h1 style="text-decoration:underline; text-align: center; font-family: cursive;font-style: italic; font-weight: bolder;">News</h1>
         <h3><b>Purchasing:</b></h3>
-       <p><b>We are currently accepting orders via email for all the plants listed. We can meet you in Lake Wales or Riverview Florida.</b></p>
-       <hr>
-       <h3><b>Garden Development Update:</b></h3>
-       <p ><b>We are currently clearing 3 acres to plant lychee, logan, and sugar apples</b></p>
-    </div>
+        <p><b>We are currently accepting orders via email for all the plants listed. We can meet you in Lake Wales or Riverview Florida.</b></p>
+        <hr>
+        <h3><b>Garden Development Update:</b></h3>
+        <p ><b>We are currently clearing 3 acres to plant lychee, logan, and sugar apples</b></p>
+        <div class="container border2" style="background-color:azure">
+            <h1 style="text-align: center; font-weight:bolder; font-family:monospace;">Nursery List</h1>
+            <p ><b>Below you can see our list of plants and trees that can be purchased by sending us an email found at our <A HREF="contact">Contact us</A> page</b></p>
+            <div class="row">
+                <div class="col s4">
+                    <img class="flag" src="../static/images/american-flag.jpg" width="100" height="60">
+                    <p ><b>All trees are air layered or grafted, so some may have fruits already or will fruit in 1-2 years.</b></p>
+                </div>
 
+                <div class="col s4">
+                    <img class="flag" src="../static/images/mexican-flag.png" width="100" height="60">
+                    <p style="color:mediumblue; "><b>Todos los árboles tienen capas de aire o injertados, 
+                        por lo que algunos pueden tener frutos ya o darán frutos en 1-2 años.</b></p>
 
-    <div class="container border2" style="background-color:azure">
-        <h1 style="text-align: center; font-weight:bolder; font-family:monospace;">Nursery List</h1>
-        <p ><b>Below you can see our list of plants and trees that can be purchased by sending us an email found at our <A HREF="contact">Contact us</A> page</b></p>
-        <div class="row">
-            <div class="col s4">
-                <img src="../static/images/american-flag.jpg" width="100" height="60">
-                <p ><b>All trees are air layered or grafted, so some may have fruits already or will fruit in 1-2 years.</b></p>
+                </div>
+
+                <div class="col s4">
+                    <img class="flag" src="../static/images/vietnamese-flag.jpg" width="100" height="60">
+                    <p style="color:teal; "><b>Tất cả các cây đều là cây phân lớp hoặc ghép không khí
+                            nên một số cây có thể đã có quả hoặc sẽ ra quả sau 1-2 năm.</b></p>
+                </div>
             </div>
-
-            <div class="col s4">
-                <img src="../static/images/mexican-flag.png"  width="100" height="60">
-                <p style="color:mediumblue; "><b>Todos los árboles tienen capas de aire o injertados, 
-                    por lo que algunos pueden tener frutos ya o darán frutos en 1-2 años.</b></p>
-
-            </div>
-
-            <div class="col s4">
-                <img src="../static/images/vietnamese-flag.jpg"  width="100" height="60">
-                <p style="color:teal; "><b>Tất cả các cây đều là cây phân lớp hoặc ghép không khí
-                     nên một số cây có thể đã có quả hoặc sẽ ra quả sau 1-2 năm.</b></p>
-            </div>
+    
+        <div class="container-fluid">
+            <table class="fix-table highlight" style="background-color:azure">
+                <thead>
+                <tr>
+                    <th >English</th>
+                    <th style="color: mediumblue; ">Spanish</th>
+                    <th style="color:teal; ">Vietnamese</th>
+                    <th >Price</th>
+                    <th >Size</th>
+                    <th >Height</th>
+                </tr>
+                </thead>
+                {% for nurse in nurseries %}
+                <tbody>
+                <tr>
+                    <td ><b>{{ nurse.english }}</b></td>
+                    <td style="color:mediumblue; "><b>{{ nurse.spanish }}</b></td>
+                    <td style="color:teal; "><b>{{ nurse.vietnamese }}</b></td>
+                    <td ><b>${{ nurse.retail }}</b></td>
+                    <td ><b>{{ nurse.size }}</b></td>
+                    <td ><b>{{ nurse.height }}</b></td>
+                </tr>
+                </tbody>
+                {% endfor %}
+            </table>
         </div>
-        <table class="highlight" style="background-color:azure">
-            <thead>
-            <tr>
-                <th >English</th>
-                <th style="color: mediumblue; ">Spanish</th>
-                <th style="color:teal; ">Vietnamese</th>
-                <th >Price</th>
-                <th >Size</th>
-                <th >Height</th>
-            </tr>
-            </thead>
-            {% for nurse in nurseries %}
-            <tbody>
-            <tr>
-                <td ><b>{{ nurse.english }}</b></td>
-                <td style="color:mediumblue; "><b>{{ nurse.spanish }}</b></td>
-                <td style="color:teal; "><b>{{ nurse.vietnamese }}</b></td>
-                <td ><b>${{ nurse.retail }}</b></td>
-                <td ><b>{{ nurse.size }}</b></td>
-                <td ><b>{{ nurse.height }}</b></td>
-            </tr>
-            </tbody>
-            {% endfor %}
-        </table>
     </div>
+    
+
 
 
 
     
         <style>
+
+
         .column {
-          float: left;
-          padding: 5px;
+        float: left;
+        padding: 5px;
+        max-width: 100%;
         }
-        
-        /* Clearfix (clear floats) */
-        .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
+
+
         </style>
 
-        <div class="row">
-            <div class="column">
-                <img src="../static/images/glenn_mango.jpg" width="300">
-                <figcaption style="background-color: white;"><b>Glenn Mango</b></figcaption>>
-            </div>
 
-            <div class="column">
-                <img src="../static/images/guavas_white.jpg" width="300">
-                <figcaption style="background-color: white;"><b>Guavas White</b></figcaption>
-            </div>
+<div class="container-fluid">
 
-            <div class="column">
-                <img src="../static/images/guavas_white_2.jpg" width="300">
-                <figcaption style="background-color: white;"><b>Guavas White</b></figcaption>
-            </div>
+    <div class="column">
+        <img src="../static/images/glenn_mango.jpg" width="300">
+        <figcaption style="background-color: white;"><b>Glenn Mango</b></figcaption>
+    </div>
 
-            <div class="column">
-                <img src="../static/images/june_plum.jpg" width="300">
-                <figcaption style="background-color: white;"><b>June Plum</b></figcaption>
-            </div>
-            <div class="column">
-                <img src="../static/images/logan.jpg" width="300">
-                <figcaption style="background-color: white;"><b>Logan</b></figcaption>
-            </div>
-            <div class="column">
-                <img src="../static/images/pomegranate.jpg" width="300">
-                <figcaption style="background-color: white;"><b>Pomegranate</b></figcaption>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="column">
-                <img src="../static/images/sapodilla.jpg" width="300">
-                <figcaption style="background-color: white;"><b>Sapodilla</b></figcaption>
-            </div>
+    <div class="column">
+        <img src="../static/images/guavas_white.jpg" width="300">
+        <figcaption style="background-color: white;"><b>Guavas White</b></figcaption>
+    </div>
 
-            <div class="column">
-                <img src="../static/images/soursop.jpg" width="300">
-                <figcaption style="background-color: white;"><b>Soursop</b></figcaption>
-            </div>
+    <div class="column">
+        <img src="../static/images/guavas_white_2.jpg" width="300">
+        <figcaption style="background-color: white;"><b>Guavas White</b></figcaption>
+    </div>
 
-            <div class="column">
-                <img src="../static/images/sugar_apples.jpg" width="300">
-                <figcaption style="background-color: white;"><b>Sugar Apples</b></figcaption>
-            </div>
+    <div class="column">
+        <img src="../static/images/june_plum.jpg" width="300">
+        <figcaption style="background-color: white;"><b>June Plum</b></figcaption>
+    </div>
 
-        </div>
-      
+    <div class="column">
+        <img src="../static/images/logan.jpg" width="300">
+        <figcaption style="background-color: white;"><b>Logan</b></figcaption>
+    </div>
+
+    <div class="column">
+        <img src="../static/images/pomegranate.jpg" width="300">
+        <figcaption style="background-color: white;"><b>Pomegranate</b></figcaption>
+    </div>
+
+    <div class="column">
+        <img src="../static/images/sapodilla.jpg" width="300">
+        <figcaption style="background-color: white;"><b>Sapodilla</b></figcaption>
+    </div>
+
+    <div class="column">
+        <img src="../static/images/soursop.jpg" width="300">
+        <figcaption style="background-color: white;"><b>Soursop</b></figcaption>
+    </div>
+
+    <div class="column">
+        <img src="../static/images/sugar_apples.jpg" width="300">
+        <figcaption style="background-color: white;"><b>Sugar Apples</b></figcaption>
+    </div>
+
+</div>
+
    
 
    
